@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_common" />
+
+    <!-- 分割线 -->
+    <View style="@style/view_partingline_common_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            style="@style/textview_common_style1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="文件编码:" />
+
+        <TextView
+            android:id="@+id/tv_file_encode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="right|center"
+            android:hint="选择文件编码"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- 分割线 -->
+    <View style="@style/view_partingline_common_style" />
+
+
+</LinearLayout>
